@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>JS Calculator</title>
+  <title>Wrong Answer Calculator 😈</title>
   <style>
     body {
       font-family: Arial;
@@ -90,7 +90,8 @@
 
   function calculate() {
     try {
-      display.value = eval(display.value);
+      let result = eval(display.value);
+      display.value = result + 1; 
     } catch {
       display.value = "Error";
     }
